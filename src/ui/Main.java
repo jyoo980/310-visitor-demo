@@ -15,7 +15,7 @@ public class Main {
         List<GroceryItem> groceryList = Arrays.asList(new ToiletPaper(), new Cookies(), new Pasta());
         Costco costcoCart = new Costco();
         for (GroceryItem item : groceryList) {
-            item.computeCost(costcoCart);
+            item.accept(costcoCart);
         }
         System.out.println("Cost of buying groceries from costco: " + costcoCart.getTotalCost());
     }
